@@ -65,4 +65,6 @@ while ($current_page <= $last_page) {
 }
 
 $all_records = ['records' => $all_records];
+
+header('Content-Type: application/json');
 echo json_encode($all_records, JSON_PRETTY_PRINT);

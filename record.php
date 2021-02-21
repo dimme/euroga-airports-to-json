@@ -73,4 +73,5 @@ function get_record($id) {
     return $record;
 }
 
+header('Content-Type: application/json');
 echo json_encode(get_record($_GET['id']), JSON_PRETTY_PRINT);
